@@ -1,0 +1,13 @@
+{
+    "name": "com.omicronperson.omicron-fsm",
+    "displayName": "Omicron FSM",
+    "version": "1.0.0",
+    "description": "Finite State Machine for Unity3D",
+    "unity": "2022.3",
+    "dependencies": {},
+    "keywords": [],
+	  "author": {
+    "name": "OmicronPerson",
+    "url": "https://github.com/Anton-Notna"
+  }
+}
