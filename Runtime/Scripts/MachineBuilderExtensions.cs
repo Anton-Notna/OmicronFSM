@@ -98,6 +98,9 @@ namespace OmicronFSM
         public static ITransitionBuilderExit FromAny(this ITransitionBuilderEnter builder)
             => builder.From(new AnySelector());
 
+        public static MachineBuilder FromOthersTo(this ITransitionBuilderEnter builder, State state)
+            => builder.From(new OtherStateSelector(state)).To(state);
+
         public static MachineBuilder FromOthersTo(this ITransitionBuilderEnter builder, string name)
             => builder.From(new OtherIdentitySelector(new StringIdentifier(name))).To(name);
 
